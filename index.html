@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="en" data-theme="light">
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <!-- ADD icon -->
+    <link rel="icon" type="image/svg" id="icon" href="BSA_logo.svg">
+    <title>Troop 309</title> 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- <link rel="stylesheet" href="styles.css" />  -->
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0"  class="bg-red-100">
+    <!-- <div class="bg-red-500 text-white p-4">TAILWIND TEST</div> -->
+    <!-- <img  alt="HTML" id="icon" width="100px" src="/assets/BSA_logo.svg"/> -->
+<!-- SECTION NAV -->
+    <div id="nav" ></div>
+<!-- SECTION  HERO    -->
+    <section id="hero" class="bg-blue-700 text-white py-60 ">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-4">Welcome to Troop 309 Brooklyn</h2>
+            <p class="text-lg mb-6">
+            Building character, leadership, and outdoor skills through Scouting.
+            </p>
+            <a href="about.html" class="bg-white text-blue-700 px-6 py-3 rounded font-semibold hover:bg-gray-100">
+            Learn More About Us
+            </a>
+        </div>
+    </section>
+<!-- SECTION QUICKS -->
+    <section id="quick" class="py-16 bg-gray-100">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+
+            <div class="p-6 bg-white shadow rounded">
+            <h3 class="text-xl font-semibold mb-2">Weekly Meetings</h3>
+            <p class="text-gray-700">Tuesdays at 7 PM at St. Mark’s Church.</p>
+            </div>
+
+            <div class="p-6 bg-white shadow rounded">
+            <h3 class="text-xl font-semibold mb-2">Outdoor Adventures</h3>
+            <p class="text-gray-700">Monthly campouts, hikes, and service projects.</p>
+            </div>
+
+            <div class="p-6 bg-white shadow rounded">
+            <h3 class="text-xl font-semibold mb-2">Leadership</h3>
+            <p class="text-gray-700">Scout‑led with trained adult guidance.</p>
+            </div>
+
+        </div>
+    </section>
+
+<!-- SECTION FOOT -->
+    <div id="footer"></div>
+
+    <!-- Floating Action Buttons -->
+    <div id="floater" class="fixed bottom-20 right-4 flex flex-col space-y-4 z-50">
+
+        <a href="donate.html" class="bg-red-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-700 text-center">
+            Donate
+        </a>
+        <a href="contact.html" class="bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-700 text-center">
+            Join
+        </a>
+        <a href="events.html" class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 text-center">
+            Events
+        </a>
+    </div>
+
+
+
+<!-- 
+    <style> #icon{filter:  brightness(0) ;}</style>
+    <link rel="icon" type="image/svg" id="icon" href="https://www.scouting.org/wp-content/uploads/2024/01/BSA_logo.svg">
+    <img  alt="HTML" id="icon" width="100px" src="BSA_logo.svg"/>
+    <img  alt="HTML" id="icon" width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"/> 
+-->
+
+    <script src="scripts/loadComponents.js"></script>
+
+    <!-- <script>
+        fetch("./components/nav.html")
+            .then(res => res.text())
+            .then(html => {
+            document.getElementById("nav").innerHTML = html;
+            });
+        fetch("./components/footer.html")
+            .then(res => res.text())
+            .then(html => {
+            document.getElementById("footer").innerHTML = html;
+            });
+        // document.getElementById("year").textContent = new Date().getFullYear();
+    </script>  -->
+
+
+</body>
+</html>
