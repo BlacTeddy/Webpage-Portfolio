@@ -1,44 +1,67 @@
 <!DOCTYPE html> 
 <html lang="en" data-theme="light">
 <head> 
+    <title>Troop 309</title> 
     <meta charset="UTF-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-
     <!-- ADD icon -->
-    <link rel="icon" type="image/svg" id="icon" href="BSA_logo.svg">
-    <title>Troop 309</title> 
+    <link rel="icon" type="image/svg" id="icon" href="./assets/BSA_logo.svg">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- <link rel="stylesheet" href="styles.css" />  -->
+    <!-- CSS StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" /> 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0"  class="bg-red-100">
-    <!-- <div class="bg-red-500 text-white p-4">TAILWIND TEST</div> -->
-    <!-- <img  alt="HTML" id="icon" width="100px" src="/assets/BSA_logo.svg"/> -->
-<!-- SECTION NAV -->
-    <div id="nav" ></div>
+<body   class="bg-slate-50 text-slate-900 bg-red-100">
+    <div data-component="nav"></div>
+
 <!-- SECTION  HERO    -->
-    <section id="hero" class="bg-blue-700 text-white py-60 ">
+    <main id="hero" class="bg-blue-700 text-white py-60 ">
         <div class="max-w-4xl mx-auto text-center px-4">
             <h2 class="text-4xl font-bold mb-4">Welcome to Troop 309 Brooklyn</h2>
             <p class="text-lg mb-6">
             Building character, leadership, and outdoor skills through Scouting.
             </p>
+<!-- <style>
+  .text-with-icon {
+    display: inline-flex;       /* Keep text and SVG inline */
+    align-items: center;        /* Vertically align */
+    font-size: 18px;
+    gap: 6px;                   /* Space between text and SVG */
+  }
+  .text-with-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;         /* Match text color */
+    transform: rotate(45deg);   /* Rotate only the SVG */
+    transition: transform 0.3s ease; /* Smooth animation */
+  }
+  .text-with-icon:hover svg {
+    transform: rotate(90deg);
+  }
+</style>
+<p class="text-with-icon">
+  Download
+  Inline SVG icon (comment this line-out)
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.67v4h6V9h3.67L12 2z"/>
+  </svg>
+</p> -->
+
             <a href="about.html" class="bg-white text-blue-700 px-6 py-3 rounded font-semibold hover:bg-gray-100">
             Learn More About Us
             </a>
         </div>
-    </section>
+    </main>
 <!-- SECTION QUICKS -->
     <section id="quick" class="py-16 bg-gray-100">
         <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
 
             <div class="p-6 bg-white shadow rounded">
             <h3 class="text-xl font-semibold mb-2">Weekly Meetings</h3>
-            <p class="text-gray-700">Tuesdays at 7 PM at St. Mark’s Church.</p>
+            <p class="text-gray-700">Saturday at 10 AM at St. Mark’s Church.</p>
             </div>
 
             <div class="p-6 bg-white shadow rounded">
@@ -55,21 +78,10 @@
     </section>
 
 <!-- SECTION FOOT -->
-    <div id="footer"></div>
+    <div data-component="footer"></div>
 
     <!-- Floating Action Buttons -->
-    <div id="floater" class="fixed bottom-20 right-4 flex flex-col space-y-4 z-50">
-
-        <a href="donate.html" class="bg-red-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-700 text-center">
-            Donate
-        </a>
-        <a href="contact.html" class="bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-700 text-center">
-            Join
-        </a>
-        <a href="events.html" class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 text-center">
-            Events
-        </a>
-    </div>
+    <div data-component="float" ></div>
 
 
 
@@ -80,21 +92,7 @@
     <img  alt="HTML" id="icon" width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"/> 
 -->
 
-    <script src="scripts/loadComponents.js"></script>
-
-    <!-- <script>
-        fetch("./components/nav.html")
-            .then(res => res.text())
-            .then(html => {
-            document.getElementById("nav").innerHTML = html;
-            });
-        fetch("./components/footer.html")
-            .then(res => res.text())
-            .then(html => {
-            document.getElementById("footer").innerHTML = html;
-            });
-        // document.getElementById("year").textContent = new Date().getFullYear();
-    </script>  -->
+    <script src="scripts/loadComponents.js" defer></script>
 
 
 </body>

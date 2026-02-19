@@ -1,0 +1,70 @@
+/* .hidden { display: block !important; }
+.flex { display: block !important; }
+nav { position: static !important; }
+a { text-decoration: none !important; } */
+
+
+
+.hamburger-line { 
+  position: absolute; 
+  display: block;
+  height: 2px; 
+  width: 1.5rem; 
+  background-color: #fff; 
+  /* slate-900 */
+  border-radius: 9999px; 
+  transition: transform 0.2s ease-out; 
+}
+/* Prevent flash on load */
+.menu-closed {
+  transform: scaleY(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* When JS adds .is-sticky When header becomes sticky */
+#site-header.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+/* Shrink padding inside nav */
+#site-header.is-sticky #site-nav {
+  padding-top: 0.5rem;   /* 8px */
+  padding-bottom: 0.5rem;
+}
+
+/* Optional: shrink logo text */
+#site-header.is-sticky .logo-text {
+  font-size: 1.15rem; /* smaller */
+}
+#site-header.is-sticky #logo{
+  height: 2rem ;
+}
+
+
+
+/* When menu is open, we’ll add a class .is-open to the button */
+#menu-btn.is-open .hamburger-line:nth-child(2) {
+  /* background-color: red; */
+  transform: translateY(7px) rotate(45deg);
+}
+#menu-btn.is-open .hamburger-line:nth-child(3) {
+  transform: scaleX(0);
+  /* background-color: blueviolet; */
+}
+#menu-btn.is-open .hamburger-line:nth-child(4) {
+  transform: translateY(-7px) rotate(-45deg);
+  /* background-color: greenyellow; */
+}
+/* Mobile menu open state */
+#mobile-menu.is-open {
+  transform: scaleY(1);
+  opacity: 1;
+  pointer-events: auto;
+}
