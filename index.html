@@ -2,57 +2,22 @@
 <html lang="en" data-theme="light">
 <head> 
     <title>Troop 309</title> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <!-- ADD icon -->
-    <link rel="icon" type="image/svg" id="icon" href="./assets/BSA_logo.svg">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Tailwind -->
+<!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- CSS StyleSheet -->
-    <link rel="stylesheet" href="./css/styles.css" /> 
+<!-- Head Loader -->
+    <script data-component="head"></script>
 </head>
-
 <body   class="bg-slate-50 text-slate-900 bg-red-100">
     <div data-component="nav"></div>
-
 <!-- SECTION  HERO    -->
-    <main id="hero" class="relative bg-cover bg-center bg-no-repeat text-white py-60 "
+    <main id="hero" class="z-10 relative bg-cover bg-center bg-no-repeat text-white py-60 "
                     style="background-image: url('./assets/white-BSA-logo.png') ;">
         <div class="absolute inset-0 bg-gradient-to-b from-black/70 from-30% to-transparent"></div>
-        <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+        <div class="relative  max-w-4xl mx-auto text-center px-4">
             <h2 class="text-4xl font-bold mb-4">Welcome to Troop 309 Brooklyn</h2>
-            <p class="text-lg mb-6">
-            Building character, leadership, and outdoor skills through Scouting.
-            </p>
-<!-- <style>
-  .text-with-icon {
-    display: inline-flex;       /* Keep text and SVG inline */
-    align-items: center;        /* Vertically align */
-    font-size: 18px;
-    gap: 6px;                   /* Space between text and SVG */
-  }
-  .text-with-icon svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;         /* Match text color */
-    transform: rotate(45deg);   /* Rotate only the SVG */
-    transition: transform 0.3s ease; /* Smooth animation */
-  }
-  .text-with-icon:hover svg {
-    transform: rotate(90deg);
-  }
-</style>
-<p class="text-with-icon">
-  Download
-  Inline SVG icon (comment this line-out)
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.67v4h6V9h3.67L12 2z"/>
-  </svg>
-</p> -->
-
-            <a href="about.html" class="bg-white text-blue-700 px-6 py-3 rounded font-semibold hover:bg-slate-500">
+          <p class="text-lg mb-6">
+            Building character, leadership, and outdoor skills through Scouting.</p>
+            <a href="about.html" class="button1 bg-white text-blue-700 px-6 py-3 rounded font-semibold hover:bg-slate-500">
             Learn More About Us
             </a>
         </div>
@@ -60,7 +25,6 @@
 <!-- SECTION QUICKS -->
     <section id="quick" class="py-16 bg-gray-100">
         <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-
             <div class="p-6 bg-white shadow rounded">
             <h3 class="text-xl font-semibold mb-2">Weekly Meetings</h3>
             <p class="text-gray-700">Saturday at 10 AM at St. Mark’s Church.</p>
@@ -75,7 +39,6 @@
             <h3 class="text-xl font-semibold mb-2">Leadership</h3>
             <p class="text-gray-700">Scout‑led with trained adult guidance.</p>
             </div>
-
         </div>
     </section>
 
@@ -84,18 +47,8 @@
 
     <!-- Floating Action Buttons -->
     <div data-component="float" ></div>
-
-
-
-<!-- 
-    <style> #icon{filter:  brightness(0) ;}</style>
-    <link rel="icon" type="image/svg" id="icon" href="https://www.scouting.org/wp-content/uploads/2024/01/BSA_logo.svg">
-    <img  alt="HTML" id="icon" width="100px" src="BSA_logo.svg"/>
-    <img  alt="HTML" id="icon" width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"/> 
--->
+    
 
     <script src="scripts/loadComponents.js" defer></script>
-
-
 </body>
 </html>

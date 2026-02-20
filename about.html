@@ -2,28 +2,44 @@
 <html lang="en" data-theme="light">
 <head> 
     <title>About–Troop 309</title> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <!-- ADD icon -->
-    <link rel="icon" type="image/svg" id="icon" href="./assets/BSA_logo.svg">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Tailwind -->
+<!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- CSS StyleSheet -->
-    <link rel="stylesheet" href="./css/styles.css" /> 
-    
-    <script src="scripts/loadComponents.js" defer></script>
+<!-- Head Loader -->
+    <script data-component="head"></script>
 </head>
 <body   class="bg-slate-50 text-slate-900 bg-red-100">
+<!-- SECTION NAVBAR -->
     <div data-component="nav"></div>
+
+<!-- SECTION MAIN -->
+<main class="text-wrap">
+    <div class="max-w-4xl mx-auto text-center px-6 py-20">
+    <h3 class="text-left text-lg font-semibold mt-2">About Troop 309</h3>
+    <p class=" px-20 text-left font-medium test">Morbi a dolor laoreet lectus venenatis hendrerit. Etiam faucibus, magna nec molestie fermentum, velit enim eleifend nisi, ut hendrerit nisi odio eget est. Nam a tortor vel libero mollis aliquet vel ut odio. Donec vitae egestas nibh. Aliquam vel semper ex. Proin laoreet tempor tellus. Aliquam quis urna eleifend, pellentesque eros non, lobortis metus. Fusce sem elit, accumsan at aliquet non, hendrerit ac sem. Etiam eu sem tellus. Vivamus dolor nunc, luctus non lorem et, sagittis gravida ligula. Aenean tempor posuere nisl at lobortis. Donec vel lectus ornare, commodo lorem vel, iaculis nisl.</p>
+
+    <h3 class="text-left text-lg font-semibold mt-3">Scouts BSA</h3>
+    <p class=" px-10 text-left text-sm font-normal test">Youth 11-17 years old</p>
+    <p class=" px-20 text-left font-medium test">Scouts BSA is the traditional Scouting experience for youth in the fifth grade through high school. Service, community engagement and leadership development become increasingly important parts of the program as youth lead their own activities and work their way toward earning Scouting’s highest rank, Eagle Scout.</p>
+
+    </div>
+</main>
+<section id="meet" class="max-w-5xl mx-auto px-6 py-20"> 
+    <span class="text-center text-lg font-semibold ">Scouting of America – Troop 309</span>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+        <p class="px-2 text-left font-medium text-md test">Our meeting location are at <a href="https://maps.app.goo.gl/23JprKLvuWvefBns8" class="no-underline hover:underline hover:text-red-900">1439 Union St</a>, at the "Free Little Library", will allow for new opportunities and additional access to programs for our Scouts and Explorers, leaders, volunteers, donors, supporters, and community members. 
+                                                            We know that the space will lead to a more collaborative and efficient operation which will improve Scouting and Exploring for the youth of NYC. 
+                                                            Our location at the "Free Little Library" is where we meet, Saturdays 10am. Allowing for in-person events, awards, activities <i>and etc.</i>; Lead by our Scout Leaders.</p>
+        <p class="py-40 text-center">hello map</p>
+    </div>
+</section>
 
     
 <!-- SECTION FOOT -->
     <div data-component="footer"></div>
-<!--     
-    <script src="scripts/loadComponents.js" defer></script> -->
+<!-- SECTION FLOATER -->
+    <div data-component="float"></div>
 
 
+    <script src="scripts/loadComponents.js" defer></script>
 </body>
 </html>
